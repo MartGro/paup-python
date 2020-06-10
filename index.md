@@ -7,5 +7,6 @@ In order to run, PAUP* relies on NEXUS-files. With a complete NEXUS-file you can
 
 ### Run PAUP* in the non-interactive mode in the command line
 
-Step 1: Make sure that you can run PAUP*, i.e. your PAUP* installation is working. For me, typing ’paup4a166_ubuntu64’ in the terminal brings me to the interactive PAUP* mode.  
+Step 1: Make sure that you can run PAUP*, i.e. your PAUP* installation is working. For me, typing ’paup4a166_ubuntu64’ in the terminal brings me to the interactive PAUP* mode.
 
+<img src="figs/run_paup.png" alt="hi" class="inline"/>
