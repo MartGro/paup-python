@@ -21,9 +21,13 @@ You can quit PAUP* by typing ´q´
 
 Step 2: Now that PAUP* is working, you can specify a NEXUS file that does what you want. I only did very simple analyses, so there is not a lot of configuation going on. 
 
+[Here is a link to a PAUP* intro from Berkeley.](http://ib.berkeley.edu/courses/ib200/2018/labs/04/lab04.pdf)
+
 The two methods I used were maximum parsimony and neighbor joining. Here are minimal examples for those two things: 
 
 **Minimal Maximum Parsimony**
+
+
 *minimal_MP.nex*
 ```
 #NEXUS
@@ -49,5 +53,35 @@ savetrees /file=INSERTFILEPATH format=newick
 end;
 ```
 
+**Minimal Neighbor Joining**
 
-[link to a PAUP* intro from Berkeley.](http://ib.berkeley.edu/courses/ib200/2018/labs/04/lab04.pdf)
+*minimal_NJ.nex*
+```
+#NEXUS
+
+Begin data;
+  dimensions ntax=5 nchar=10;
+  format datatype=protein missing=? gap=-;
+  matrix
+    A       AAAMMMWWWW
+    B       LLLYMMYVVV
+    C       MMMKKKKKAA
+    D       AMFFFSKKSS
+    E       LLLKKKKKSS
+    ;
+end;
+
+Begin Paup;
+set criterion = distance;
+nj brlens = yes treefile=njtree.tre;
+savetrees /file=INSERTFILEPATH format=newick
+;
+
+end;
+```
+
+
+
+
+
+
