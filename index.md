@@ -80,7 +80,9 @@ savetrees /file=INSERTFILEPATH format=newick
 end;
 ```
 
-I wrote some python functions that help with the generation of NEXUS files from FASTA-files. The python code can be found [here](https://github.com/MartGro/paup-python/blob/master/nexus_file_generation_utilities.py)
+I wrote some python functions that help with the generation of NEXUS files from FASTA-files. The python code can be found here:
+
+[Generating NEXUS from FASTA files](https://github.com/MartGro/paup-python/blob/master/nexus_file_generation_utilities.py)
 
 
 
