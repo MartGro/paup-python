@@ -1,3 +1,6 @@
+#Depends on Biopython
+from Bio import SeqIO
+
 def create_matrix_string(taxa_list):
     s = ""
     for sequence in taxa_list:
